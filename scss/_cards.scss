@@ -1,0 +1,49 @@
+.contenedor-card{
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    justify-content: space-around;
+}
+
+.acercar{
+    overflow: hidden;
+    img{
+        transition: all 1s;
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+}
+
+/*Card de los Niveles*/
+
+.card1{
+    padding: 1.5em .5em .5em;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.card__color1{
+    background-color: #85C1E9;
+}
+
+.card__color2{
+    background-color: #c03a2bdc;
+}
+
+.card__color3{
+    background-color: #76D7C4;
+}
+
+.card__color4{
+    background-color: #F9E79F;
+}
+
+.card__color5{
+    background-color: #AF7AC5;
+}
+
+.card__color6{
+    background-color: #F5B041;
+}
+

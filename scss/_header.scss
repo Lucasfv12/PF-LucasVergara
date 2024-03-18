@@ -1,0 +1,41 @@
+body{
+    background-color: $fondo;
+}
+
+.logo{
+    display: inline-block;
+    height: 50px;
+    padding-right: 2rem;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+span{
+    font-size: 30px;
+}
+
+.nav-item a{
+color: map-get($colores , color-links );
+transition: all 0.2s;
+&:hover{
+    transform: scale(1.1);
+}
+}
+
+@media (max-width: 525px){
+    span{
+        font-size: 20px;
+    }
+}
+
+.divisor{
+    color: map-get($colores, color-divisor );
+    size: 2px;
+    border: solid;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+

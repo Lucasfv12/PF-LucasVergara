@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
+/* .arimo-<uniquifier> {
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.overlay-niveles {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 170px);
+}
+
+.titulo-niveles {
+  color: white;
+  border-color: black solid;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.flex-center, .contenedor-frase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*mixin de niveles*/
+body {
+  background-color: #F4F6F6;
+}
+
+.logo {
+  display: inline-block;
+  height: 50px;
+  padding-right: 2rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.logo:hover {
+  transform: scale(1.2);
+}
+
+span {
+  font-size: 30px;
+}
+
+.nav-item a {
+  color: #ffffff;
+  transition: all 0.2s;
+}
+.nav-item a:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 525px) {
+  span {
+    font-size: 20px;
+  }
+}
+.divisor {
+  color: rgb(51, 99, 233);
+  size: 2px;
+  border: solid;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contenedor-card {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  justify-content: space-around;
+}
+
+.acercar {
+  overflow: hidden;
+}
+.acercar img {
+  transition: all 1s;
+}
+.acercar img:hover {
+  transform: scale(1.5);
+}
+
+/*Card de los Niveles*/
+.card1 {
+  padding: 1.5em 0.5em 0.5em;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card__color1 {
+  background-color: #85C1E9;
+}
+
+.card__color2 {
+  background-color: rgba(192, 58, 43, 0.862745098);
+}
+
+.card__color3 {
+  background-color: #76D7C4;
+}
+
+.card__color4 {
+  background-color: #F9E79F;
+}
+
+.card__color5 {
+  background-color: #AF7AC5;
+}
+
+.card__color6 {
+  background-color: #F5B041;
+}
+
+/* Contendeor Carrusel */
+@media only screen and (max-width: 383px) {
+  .titulo-nav {
+    font-size: 18px;
+  }
+}
+/* Contenedor Carrusel */
+.imag1 {
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgba(9, 50, 121, 0.247) 35%, rgb(0, 143, 249) 97%, rgb(0, 212, 255) 100%), url(../../img/EntradaJardinconEscudo.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.imag2 {
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgba(9, 50, 121, 0.247) 35%, rgb(0, 143, 249) 97%, rgb(0, 212, 255) 100%), url(../../img/patiocolegio.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Html Nivel Inicial */
+.parrafo {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: verdana;
+}
+.parrafo .titulo {
+  font-family: "Arimo", sans-serif;
+}
+.parrafo .parrafo__jardin {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 22px;
+}
+
+.parrafo2 {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: verdana;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.container {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(8, 200px);
+  padding: 20px;
+  grid-gap: 20px;
+}
+
+.item {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-position: center;
+  background-size: cover;
+}
+
+.item1 {
+  background-image: url(../../img/img-inicial/anillas.webp);
+}
+
+.item2 {
+  background-image: url(../../img/img-inicial/artistica.webp);
+}
+
+.item3 {
+  background-image: url(../../img/img-inicial/bolsas.webp);
+}
+
+.item4 {
+  background-image: url(../../img/img-inicial/carpa.webp);
+}
+
+.item5 {
+  background-image: url(../../img/img-inicial/carpaamardo.webp);
+}
+
+.item6 {
+  background-image: url(../../img/img-inicial/carpas.webp);
+  background-position: inherit;
+  background-size: cover;
+}
+
+.item7 {
+  background-image: url(../../img/img-inicial/Cocina.webp);
+}
+
+.item8 {
+  background-image: url(../../img/img-inicial/Grupo.webp);
+}
+
+.item9 {
+  background-image: url(../../img/img-inicial/Grupo1.webp);
+}
+
+.item10 {
+  background-image: url(../../img/img-inicial/Grupo2.webp);
+}
+
+.item11 {
+  background-image: url(../../img/img-inicial/Grupo3.webp);
+}
+
+.item12 {
+  background-image: url(../../img/img-inicial/grupocompleto.webp);
+  background-position: inherit;
+  background-size: cover;
+}
+
+.item13 {
+  background-image: url(../../img/img-inicial/carrerabolsas.webp);
+}
+
+.item14 {
+  background-image: url(../../img/img-inicial/juego.webp);
+}
+
+.item15 {
+  background-image: url(../../img/img-inicial/profesores.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+.item16 {
+  background-image: url(../../img/img-inicial/padres.webp);
+}
+
+@media only screen and (max-width: 480px) {
+  .galeria {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(16, 300px);
+  }
+  .item1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .item2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .item3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .item4 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .item5 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .item6 {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  .item7 {
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+  .item8 {
+    grid-column: 1/2;
+    grid-row: 9/10;
+  }
+  .item9 {
+    grid-column: 1/2;
+    grid-row: 10/11;
+  }
+  .item10 {
+    grid-column: 1/2;
+    grid-row: 11/12;
+  }
+  .item11 {
+    grid-column: 1/2;
+    grid-row: 12/13;
+  }
+  .item12 {
+    grid-column: 1/2;
+    grid-row: 13/14;
+  }
+  .item13 {
+    grid-column: 1/2;
+    grid-row: 14/15;
+  }
+  .item14 {
+    grid-column: 1/2;
+    grid-row: 15/16;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .galeria {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 200px);
+  }
+  .item1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .item2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .item3 {
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+  .item4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .item5 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+  .item6 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+  .item7 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .item8 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .item9 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  .item10 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+  }
+  .item11 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .item12 {
+    grid-column: 2/4;
+    grid-row: 4/5;
+  }
+  .item13 {
+    grid-column: 4/5;
+    grid-row: 4/5;
+  }
+  .item14 {
+    grid-column: 1/2;
+    grid-row: 5/5;
+  }
+  .item15 {
+    grid-column: 2/4;
+    grid-row: 5/5;
+  }
+  .item16 {
+    grid-column: 4/5;
+    grid-row: 5/5;
+  }
+}
+.main__imagen {
+  height: 300px;
+  width: auto;
+  margin-left: 50px;
+}
+
+.contenedor-frase {
+  padding: 1.5em 0.5em 0.5em;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border: black;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: rgb(245, 212, 169);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contenedor-frase .contenedor-frase__logo {
+  height: 70px;
+  width: auto;
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

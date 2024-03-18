@@ -1,0 +1,12 @@
+/*mixin de niveles*/
+@mixin padding-fuente($left, $right, $font){
+    padding-left: $left;
+    padding-right: $right;
+    font-family: $font;
+}
+
+@mixin alineacion-tamanio($alineacion, $mb, $mt){
+    text-align: $alineacion;
+    margin-bottom: $mb;
+    margin-top: $mt;
+}

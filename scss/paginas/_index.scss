@@ -1,0 +1,17 @@
+.contenedor-frase{
+    @extend .flex-center;
+    padding: 1.5em .5em .5em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border: $borde;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: map-get($colores, color-fondo);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    .contenedor-frase__logo{
+        height: 70px;
+        width: auto;
+        padding-bottom: 10px;
+        padding-right: 20px;
+    }
+}
+
