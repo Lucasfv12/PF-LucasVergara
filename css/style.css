@@ -134,7 +134,7 @@ span {
 }
 
 .imag2 {
-  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgba(9, 50, 121, 0.247) 35%, rgb(0, 143, 249) 97%, rgb(0, 212, 255) 100%), url(/img/patiocolegio.webp);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgba(9, 50, 121, 0.247) 35%, rgb(0, 143, 249) 97%, rgb(0, 212, 255) 100%), url(../img/patiocolegio.webp);
   background-size: cover;
   background-position: center;
 }
