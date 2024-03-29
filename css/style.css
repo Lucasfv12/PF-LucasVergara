@@ -1,4 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
+@media only screen and (max-width: 991px) {
+  .card1 {
+    margin-top: 1rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .titulo-nav {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .titulo-nav {
+    display: none;
+  }
+}
+.flex-center, .contenedor-frase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*mixin de niveles*/
 /* .arimo-<uniquifier> {
     font-family: "Arimo", sans-serif;
     font-optical-sizing: auto;
@@ -25,51 +47,40 @@
   margin-left: 50px;
 }
 
-.flex-center, .contenedor-frase {
+.foto {
+  width: 300px;
+  height: auto;
+}
+
+.contenedor-foto {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
 
-/*mixin de niveles*/
-body {
-  background-color: #F4F6F6;
+.accordion {
+  --bs-accordion-btn-bg: #212529;
+  --bs-accordion-active-bg: grey;
+  --bs-accordion-active-color: white;
+  --bs-accordion-border-color:white;
 }
 
-.logo {
-  display: inline-block;
-  height: 50px;
-  padding-right: 2rem;
-  transition: all 0.3s;
-  cursor: pointer;
+.accordion-button {
+  color: white;
 }
-.logo:hover {
-  transform: scale(1.2);
+.accordion-button:focus {
+  box-shadow: none;
+  border: black;
 }
-
-span {
-  font-size: 30px;
-}
-
-.nav-item a {
-  color: #ffffff;
-  transition: all 0.2s;
-}
-.nav-item a:hover {
-  transform: scale(1.1);
+.accordion-button::after {
+  background-color: none;
+  content: "\f0d7";
+  font-family: fontawesome;
+  width: auto;
+  height: auto;
 }
 
-@media (max-width: 525px) {
-  span {
-    font-size: 20px;
-  }
-}
-.divisor {
-  color: rgb(51, 99, 233);
-  size: 2px;
-  border: solid;
-  margin-left: 10%;
-  margin-right: 10%;
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
 }
 
 .contenedor-card {
@@ -120,13 +131,6 @@ span {
   background-color: #F5B041;
 }
 
-/* Contendeor Carrusel */
-@media only screen and (max-width: 383px) {
-  .titulo-nav {
-    font-size: 18px;
-  }
-}
-/* Contenedor Carrusel */
 .imag1 {
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgba(9, 50, 121, 0.247) 35%, rgb(0, 143, 249) 97%, rgb(0, 212, 255) 100%), url(../img/patiocolegio.webp);
   background-size: cover;
@@ -397,6 +401,37 @@ h2 {
   height: 300px;
   width: auto;
   margin-left: 50px;
+}
+
+body {
+  background-color: #F4F6F6;
+}
+
+.logo {
+  display: inline-block;
+  height: 50px;
+  padding-right: 2rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.logo:hover {
+  transform: scale(1.2);
+}
+
+.nav-item a {
+  color: #ffffff;
+  transition: all 0.2s;
+}
+.nav-item a:hover {
+  transform: scale(1.1);
+}
+
+.divisor {
+  color: rgb(51, 99, 233);
+  size: 2px;
+  border: solid;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .contenedor-frase {

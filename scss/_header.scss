@@ -13,9 +13,6 @@ body{
     }
 }
 
-span{
-    font-size: 30px;
-}
 
 .nav-item a{
 color: map-get($colores , color-links );
@@ -25,11 +22,6 @@ transition: all 0.2s;
 }
 }
 
-@media (max-width: 525px){
-    span{
-        font-size: 20px;
-    }
-}
 
 .divisor{
     color: map-get($colores, color-divisor );

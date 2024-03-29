@@ -1,20 +1,20 @@
-
-@import 'generales';
-
-@import 'variables';
-
-
+@import 'queries';
 @import 'utilities/maps';
 @import 'utilities/extends';
 @import 'utilities/mixins';
 
+@import 'generales';
 
+@import 'accordion';
 
-@import 'header';
+@import 'variables';
+
 @import 'cards';
 
 @import 'paginas/carrusel';
 @import 'paginas/niveles';
+@import 'header';
 @import 'paginas/index';
+
 
 

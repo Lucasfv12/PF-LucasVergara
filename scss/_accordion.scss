@@ -1,0 +1,25 @@
+.accordion{
+    --bs-accordion-btn-bg: #212529;
+    --bs-accordion-active-bg: grey;
+    --bs-accordion-active-color: white;
+    --bs-accordion-border-color:white;
+}
+
+.accordion-button{
+    color: white;
+    &:focus{
+        box-shadow: none;
+        border: black;
+    }
+    &::after{
+        background-color: none;
+        content: "\f0d7";
+        font-family: fontawesome;
+        width: auto;
+        height: auto;
+    }
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image: none;
+}
